@@ -4,7 +4,7 @@ import { fetchProducts } from "../redux/services/productsSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { Product } from "./Product";
 import { Loading } from "./Loading";
-export const Products = () => {
+const Products = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.products);
   useEffect(() => {
@@ -32,3 +32,4 @@ export const Products = () => {
     </Container>
   );
 };
+export default Products;

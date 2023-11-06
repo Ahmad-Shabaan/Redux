@@ -8,7 +8,7 @@ import {
   changePrice,
 } from "../redux/features/templatesSlcie";
 import { Link } from "react-router-dom";
-export const Home = () => {
+const Home = () => {
   const dispatch = useDispatch();
   const templateNum = 0;
   const template = useSelector((state) => state.templates[templateNum]);
@@ -95,3 +95,4 @@ export const Home = () => {
     </Container>
   );
 };
+export default Home;

@@ -3,7 +3,7 @@ import productImg from "../assets/download.jpeg";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { useSelector } from "react-redux";
-export const Result = () => {
+ const Result = () => {
   const templateNum = 0;
   const template = useSelector((state) => state.templates[templateNum]);
   const productsSection = template.ProductsSection;
@@ -26,3 +26,4 @@ export const Result = () => {
     </Container>
   );
 };
+export default Result

@@ -8,7 +8,7 @@ import {
   increaseQuantity,
   decreaseQuantity,
 } from "../redux/features/cartSlice";
-export const Cart = () => {
+const Cart = () => {
   const dispatch = useDispatch();
   const carts = useSelector((state) => state.carts);
   const total = carts.reduce((acc, ele) => {
@@ -99,3 +99,4 @@ export const Cart = () => {
     </>
   );
 };
+export default Cart;
