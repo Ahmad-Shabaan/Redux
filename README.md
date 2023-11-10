@@ -5,7 +5,7 @@ steps to test
 
 1 - git.clone db.json repo
 
-url : GitHub - Ahmad-Shabaan/fake-template-api-json-server
+url : github.com/Ahmad-Shabaan/fake-template-api-json-server
 
 2- npm install npm i json-server
 
