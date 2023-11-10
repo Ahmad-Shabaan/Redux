@@ -1,0 +1,46 @@
+/* testimonies container */
+.testimonies-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* testimonies heading */
+  .testimonies-container h2 {
+    font-size: 24px;
+    color: #333 !important;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimony card */
+  .testimony {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Testimony text */
+  .testimony-text {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Testimony author */
+  .testimony-author {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Testimony list */
+  .testimony-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

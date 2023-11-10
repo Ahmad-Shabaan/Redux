@@ -1,19 +1,29 @@
-import "./App.css";
-import NavSection from "./components/NavSection";
 import { Route, Routes } from "react-router";
-import { Home, Products, Cart, Result } from "./components";
+import "./App.css";
+import { Template, Home , GeneratedTemplate} from "./pages";
 function App() {
   return (
     <>
-      <NavSection />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/result" element={<Result />} />
+        <Route path={`/template/:id`} element={<Template />} />
+        <Route path={`/generated/:id`} element={<GeneratedTemplate />} />
+
       </Routes>
     </>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+// json-server --watch db.json

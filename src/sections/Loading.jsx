@@ -1,5 +1,5 @@
 import React from "react";
-export const Loading = () => {
+ const Loading = () => {
   return (
     <div className="spinner">
       <div className="bounce1"></div>
@@ -8,3 +8,4 @@ export const Loading = () => {
     </div>
   );
 };
+export default Loading;

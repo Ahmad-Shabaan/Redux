@@ -1,0 +1,56 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+  }
+  .cancel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+
+  }
+  
+  .overlay h2 {
+    margin-bottom: 10px;
+  }
+  
+  .overlay input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  label{
+    width: 100%;
+    text-align: left;
+  }
+  
