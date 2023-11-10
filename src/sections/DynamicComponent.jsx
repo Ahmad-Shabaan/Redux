@@ -42,7 +42,8 @@ function DynamicComponent({ sectionType, secIndex }) {
   // functions of ( Edit , Adding , Deleting)
   // Handle update item Fun
   const handleUpdateItem = (properties, index) => {
-    setSectionItem({ ...properties, id: index });
+    setSectionItem(properties);
+
     setShowOverlay(true);
     setTypeOperation("edit");
   };
@@ -61,7 +62,6 @@ function DynamicComponent({ sectionType, secIndex }) {
 
     // update section
     newSections[secIndex] = updatedSection;
-
     dispatch(updateTemplate({ ...template, sections: newSections }));
   };
 

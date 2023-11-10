@@ -17,7 +17,6 @@ export default function Products({
   const template = _template.template;
   const generated = _template.generated;
 
-
   const [itemIndex, setItemIndex] = useState(0);
   const items = template.sections[secIndex].items;
   const myInputs = Object.keys(items[0]);
@@ -35,6 +34,8 @@ export default function Products({
               <Card.Title>{item.title}</Card.Title>
               <Card.Text>{item.description}</Card.Text>
               <Card.Text>{item.price}$</Card.Text>
+              <Card.Text>{item.category}</Card.Text>
+              <Card.Text>{item.count}</Card.Text>
               <Button style={{ width: "100%" }}>Buy Now</Button>
               {!generated && (
                 <div className="flex-space">

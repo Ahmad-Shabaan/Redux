@@ -26,4 +26,3 @@ export default App;
 
 
 
-// json-server --watch db.json

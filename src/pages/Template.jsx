@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { fetchTemplate } from "../redux/services/templateSlice";
+import { fetchTemplate, updateTemplate } from "../redux/services/templateSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { Container, Nav, Row, Navbar, Button } from "react-bootstrap";
@@ -57,6 +57,8 @@ const Template = () => {
             <Link
               to={`/generated/${id}`}
               onClick={() => {
+                console.log(template.template)
+                dispatch(updateTemplate(template.template))
                 dispatch(changeGenerated(true));
               }}
             >
